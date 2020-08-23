@@ -1,14 +1,13 @@
 import React from 'react';
 
-
 const Formulario = () => {
 
-  return (
+      return (
     <form
       className="col-12"
     >
       <fieldset className="text-center">
-        <legend>Busca bebidas por Categoría o Ingrediente</legend>
+            <legend>Search Drinks by Category or Ingredient</legend>
       </fieldset>
 
       <div className="row mt-4">
@@ -17,7 +16,7 @@ const Formulario = () => {
             name="nombre"
             className="form-control"
             type="text"
-            placeholder="Buscar por Ingrediente"
+            placeholder="Search by Ingredient"
           />
         </div>
       </div>
