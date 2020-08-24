@@ -17,11 +17,11 @@ const RecetasProvider = (props) => {
       const obtenerRecetas = async ()=>{
         const url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${busqueda.nombre}&c=${busqueda.categoria}`;
         const recetas = await axios.get(url)
-        console.log(recetas.data.drinks)
         setRecetas(recetas.data.drinks);
       }
       obtenerRecetas()
     }
+    //eslint-disable-next-line
   },[busqueda])
 
   return ( 
